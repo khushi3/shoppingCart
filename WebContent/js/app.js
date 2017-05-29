@@ -5,8 +5,9 @@ app.controller('shoppingController', ['$scope', function($scope){
 	$scope.addItems = function() {
 		
 		$scope.products.push($scope.shoppingItem);
-		
-		
+	}
+	$scope.removeItems = function(items) {
+		$scope.products.splice(items,1);
 	}
 	
 }])
